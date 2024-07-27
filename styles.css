@@ -1,0 +1,39 @@
+/* Reset some basic styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('background.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Make the background image fixed */
+    color: #fff; /* Set text color to white for contrast */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
