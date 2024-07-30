@@ -14,35 +14,30 @@
             box-sizing: border-box;
         }
 
-        /* General body styling with animated background image */
+        /* General body styling with background image */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             background-image: url('background.jpg'); /* Replace with your image URL */
             background-size: cover; /* Cover the entire page */
             background-position: center; /* Center the image */
-            color: #000; /* Set text color to black */
+            background-attachment: fixed; /* Make the background image fixed */
+            color: #fff; /* Set text color to white for contrast */
             overflow: hidden; /* Prevent scrollbars from appearing */
-        }
-
-        /* Animation for background image scrolling */
-        @keyframes background-scroll {
-            0% { background-position: 0 0; }
-            100% { background-position: 100% 100%; }
-        }
-
-        /* Apply the animation */
-        body {
-            animation: background-scroll 60s linear infinite; /* Adjust duration as needed */
         }
 
         /* Header styling */
         header {
             text-align: center;
             padding: 2rem;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text color for contrast */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Slightly darker shadow for better visibility */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+            color: #fff; /* White text color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker shade on hover */
         }
 
         /* Logo styling */
@@ -51,58 +46,86 @@
             height: auto; /* Maintain aspect ratio */
             display: block;
             margin: 0 auto; /* Center align the logo */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
         }
 
+        .logo:hover {
+            transform: scale(1.1); /* Slightly enlarge logo on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+        }
+
+        /* Button styling */
         .home-button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 18px; /* Larger font size for better readability */
             color: #fff; /* White text color */
             background-color: #007bff; /* Button background color */
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for background color, transform, and shadow */
             margin-top: 1rem; /* Space above the button */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Button shadow */
         }
 
         .home-button:hover {
             background-color: #0056b3; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
         }
 
         /* Main content styling */
         main {
             padding: 2rem;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
             margin: 2rem auto;
             max-width: 800px;
-            border-radius: 8px; /* Rounded corners for a softer look */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for content box */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+        }
+
+        main:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
         }
 
         h1 {
             font-size: 2.5rem; /* Larger font size for headings */
             margin-bottom: 1rem; /* Space below the heading */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for better readability */
         }
 
         p {
             font-size: 1.125rem; /* Slightly larger font size for readability */
             margin-bottom: 1rem; /* Space below paragraphs */
+            line-height: 1.8; /* Increased line height for readability */
+            transition: color 0.3s ease; /* Smooth transition for text color */
+        }
+
+        p:hover {
+            color: #e0e0e0; /* Slightly lighter text color on hover */
         }
 
         /* Footer styling */
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent black background */
-            color: #fff; /* White text color for contrast */
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5); /* Slightly darker shadow for better visibility */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+            color: #fff; /* White text color */
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5); /* Shadow for footer */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        footer:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker shade on hover */
         }
     </style>
 </head>
 <body>
     <header>
         <a href="https://vishalgrateful.github.io/classic-cut/" aria-label="Go to Home Page">
-            <img src="logo.svg" alt="Fresh Meal Logo" class="logo"> <!-- Add your logo image here -->
+            <img src="logo.png" alt="Fresh Meal Logo" class="logo"> <!-- Add your logo image here -->
         </a>
         <a href="https://vishalgrateful.github.io/classic-cut/" class="home-button" aria-label="Go to Home Page">Home</a>
     </header>
@@ -127,6 +150,8 @@
     </footer>
 </body>
 </html>
+
+
 
 
 
