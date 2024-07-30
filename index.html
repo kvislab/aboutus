@@ -14,15 +14,26 @@
             box-sizing: border-box;
         }
 
-        /* General body styling with background image */
+        /* General body styling with animated background image */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             background-image: url('background.jpg'); /* Replace with your image URL */
             background-size: cover; /* Cover the entire page */
             background-position: center; /* Center the image */
-            background-attachment: fixed; /* Make the background image fixed */
             color: #000; /* Set text color to black */
+            overflow: hidden; /* Prevent scrollbars from appearing */
+        }
+
+        /* Animation for background image scrolling */
+        @keyframes background-scroll {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        /* Apply the animation */
+        body {
+            animation: background-scroll 60s linear infinite; /* Adjust duration as needed */
         }
 
         /* Header styling */
@@ -104,4 +115,5 @@
     </footer>
 </body>
 </html>
+
 
