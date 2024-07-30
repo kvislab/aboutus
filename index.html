@@ -3,61 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <meta name="description" content="Learn more about Fresh Meal, a restaurant dedicated to offering high-quality meals made from the freshest ingredients.">
+    <meta name="keywords" content="Fresh Meal, restaurant, quality meals, fresh ingredients">
+    <title>About Us - Fresh Meal</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some basic styling */
+        body, h1, h2, p {
             margin: 0;
             padding: 0;
-            background: url('background.jpg') no-repeat center center fixed; /* Update path as needed */
-            background-size: cover;
-            color: #fff; /* Ensures text is readable on potentially dark background */
+            box-sizing: border-box;
         }
 
+        /* General body styling with background image */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-image: url('background.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Cover the entire page */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Make the background image fixed */
+            color: #000; /* Set text color to black */
+        }
+
+        /* Header styling */
         header {
-            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for contrast */
-            color: #fff;
-            padding: 10px 0;
             text-align: center;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
         }
 
         .home-button {
             display: inline-block;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 18px; /* Larger font size for better readability */
             color: #fff;
             background-color: #007bff;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
         }
 
         .home-button:hover {
             background-color: #0056b3;
         }
 
-        .content {
-            padding: 20px;
+        /* Main content styling */
+        main {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            margin: 2rem auto;
             max-width: 800px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for readability */
-            border-radius: 5px;
+            border-radius: 8px; /* Rounded corners for a softer look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
         }
 
+        h1 {
+            font-size: 2.5rem; /* Larger font size for headings */
+            margin-bottom: 1rem; /* Space below the heading */
+        }
+
+        p {
+            font-size: 1.125rem; /* Slightly larger font size for readability */
+            margin-bottom: 1rem; /* Space below paragraphs */
+        }
+
+        /* Footer styling */
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for contrast */
-            color: #fff;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="https://vishalgrateful.github.io/classic-cut/" class="home-button">Home</a>
+        <a href="https://vishalgrateful.github.io/classic-cut/" class="home-button" aria-label="Go to Home Page">Home</a>
     </header>
 
-    <div class="content">
+    <main>
         <h1>About Us</h1>
         <p>Welcome to Fresh Meal! At Fresh Meal, we believe that great food
             has the power to bring people together and create unforgettable 
@@ -67,10 +92,10 @@
             flavorful meals that nourish both the body and soul. Our founders,
             were inspired by their passion for cooking and a love for bringing
             people together over a great meal, they set out to create a dining
-            experience that combines quality ingredients, innovative recipes ,
-            and a warm, inviting atmosphere Discover the best meals and recipes
+            experience that combines quality ingredients, innovative recipes,
+            and a warm, inviting atmosphere. Discover the best meals and recipes
             with us!</p>
-    </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 Fresh Meal. All rights reserved.</p>
